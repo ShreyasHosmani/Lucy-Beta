@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.element.lucy">
+
+    <!-- The following chunk of code determines all the permissions that the app will use -->
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!-- The following chunk of code determines all activities and their properties in the app -->
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/myai"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/robot"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.element.lucy.MainActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.element.lucy.SplashActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.element.lucy.IntroductionActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.element.lucy.DevelopersActivity"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="About">
+
+        <Preference
+            android:summary="Onyx is an artificially intelligent assistive chatbot that can help you place orders with DHL or have a simple conversation."
+            android:icon="@drawable/ic_launcher"
+            android:title="Onyx. AI. Personified."
+            android:defaultValue="false">
+            <intent android:targetPackage="com.element.onyx"
+                android:targetClass="com.element.onyx.EasterEggActivity"/>
+        </Preference>
+
+    <Preference
+        android:summary="Onyx 1.0 (Hydrogen) is currently active on this device"
+        android:icon="@drawable/version"
+        android:title="Version"
+        android:defaultValue="false">
+        <intent android:targetPackage="com.element.onyx"
+            android:targetClass="com.element.onyx.EasterEggActivity"/>
+    </Preference>
+
+        <Preference
+            android:summary="Find out who developed Onyx. It's important that you know them."
+            android:icon="@drawable/star"
+            android:title="The Creators Of Onyx"
+            android:defaultValue="false">
+            <intent android:targetPackage="com.element.onyx"
+                android:targetClass="com.element.onyx.DevelopersActivity"/>
+        </Preference>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Developer Edition.\n\nNo ads for you. You develop Onyx.\n\nFeel free to provide feedback on the Play Store."/>
+
+</PreferenceScreen>

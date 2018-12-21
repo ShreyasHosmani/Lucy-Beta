@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:theme="@style/AppTheme.NoActionBar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/constraintlayout"
+    android:background="@drawable/animated_background"
+    tools:context="com.element.lucy.DevelopersActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black_overlay"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="30sp"
+            android:background="@color/transparent_overlay">
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/shreyas_card"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="200sp"
+                android:padding="10sp"
+                card_view:cardBackgroundColor="@color/colorWhite"
+                card_view:cardCornerRadius="4dp"
+                card_view:cardElevation="5sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/white_overlay">
+
+                        <ImageView
+                            android:layout_width="100sp"
+                            android:layout_height="100sp"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:src="@drawable/meone"
+                            ></ImageView>
+
+                        <TextView
+                            android:id="@+id/shreyas_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="15sp"
+                            android:padding="10sp"
+                            android:text="Shreyas Hosmani"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_below="@id/shreyas_name"
+                            android:padding="10sp"
+                            android:text="Android Developer. Tech Savy. Crazy."
+                            android:textSize="10sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="20sp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/sukhada_facebook"
+                                android:layout_width="50sp"
+                                android:layout_height="50sp"
+                                android:layout_weight="1"
+                                android:src="@drawable/fb" />
+
+                        </LinearLayout>
+
+
+
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/sukhada_card"
+                android:layout_width="match_parent"
+                android:layout_height="200sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50sp"
+                android:padding="10sp"
+                card_view:cardBackgroundColor="@color/colorWhite"
+                card_view:cardCornerRadius="4dp"
+                card_view:cardElevation="5sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/white_overlay">
+
+                        <ImageView
+                            android:layout_width="100sp"
+                            android:layout_height="100sp"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:src="@drawable/metwo" />
+
+                        <TextView
+                            android:id="@+id/sukhada_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="15sp"
+                            android:padding="10sp"
+                            android:text="Sukhada Wagh"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_below="@id/sukhada_name"
+                            android:padding="10sp"
+                            android:text="Android Developer, Beautiful, Tech Enthusiast"
+                            android:textSize="10sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="20sp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/shreyas_facebook"
+                                android:layout_width="50sp"
+                                android:layout_height="50sp"
+                                android:layout_weight="1"
+                                android:src="@drawable/fb" />
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
